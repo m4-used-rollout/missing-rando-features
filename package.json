@@ -1,0 +1,28 @@
+{
+  "name": "missing-rando-features",
+  "version": "1.0.0",
+  "description": "",
+  "main": "randomize.js",
+  "directories": {
+    "lib": "lib",
+    "bin": "bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4-used-rollout/missing-rando-features.git"
+  },
+  "author": "M4",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/m4-used-rollout/missing-rando-features/issues"
+  },
+  "homepage": "https://github.com/m4-used-rollout/missing-rando-features#readme",
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "typescript": "^4.3.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node ./bin/randomize.js"
+  }
+}
