@@ -17,7 +17,7 @@ function operation(filename: string, file: Buffer): Buffer {
     const normalTrainers = trainerClassIds.filter(t => !isSpecialTrainer(t.classId));
     const specialTraners = trainerClassIds.filter(t => isSpecialTrainer(t.classId));
 
-    console.log(`"Found ${trainerClassIds.length} trainers, ${normalTrainers.length} normal and ${specialTraners.length} special.`);
+    console.log(`Found ${trainerClassIds.length} trainers, ${normalTrainers.length} normal and ${specialTraners.length} special.`);
     console.log("Shuffling trainer classes...");
 
     shuffleAndRemap(normalTrainers);
