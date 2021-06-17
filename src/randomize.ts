@@ -20,7 +20,7 @@ const command = (process.argv[2] || "").toLowerCase();
             filename = resolve(filename);
             if (existsSync(filename)) {
                 console.log(`Reading file ${filename}...`);
-                const result = module.operation(basename(filename), readFileSync(filename), ...process.argv.slice(5));
+                const result = module.operation(basename(filename), readFileSync(filename), ...process.argv.slice(4));
                 console.log(`Replacing contents of file ${filename}...`);
                 return writeFileSync(filename, result);
             }
